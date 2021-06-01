@@ -26,6 +26,13 @@ nbproject
 .vscode
 _ide_helper.php
 
+# Public
+/public/*
+!/public/.htaccess
+!/public/favicon.ico
+!/public/index.php
+!/public/robots.txt
+
 # Other ignores
 .DS_Store
 package-lock.json
