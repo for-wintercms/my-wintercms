@@ -32,6 +32,6 @@ class Plugin extends PluginBase
      */
     public function register()
     {
-        $this->registerConsoleCommand('ds:addadmin', 'DS\Main\Console\AddAdmin');
+        // $this->registerConsoleCommand('ds:addadmin', 'DS\Main\Console\AddAdmin');
     }
 }

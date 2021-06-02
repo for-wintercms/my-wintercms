@@ -16,6 +16,9 @@ git clone https://github.com/for-wintercms/my-wintercms.git new-project
 cd new-project
 composer install
 
+# Generates a mirrored public folder using symbolic links.
+php artisan winter:mirror public/
+
 # Generate a configuration file (.env)
 php artisan winter:env
 
@@ -24,10 +27,4 @@ php artisan key:generate
 
 # DB migration
 php artisan winter:up
-
-# Generates a mirrored public folder using symbolic links.
-php artisan winter:mirror public/
-
-# Add admin
-php artisan ds:addadmin
 ```
