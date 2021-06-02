@@ -27,4 +27,7 @@ php artisan winter:up
 
 # Generates a mirrored public folder using symbolic links.
 php artisan winter:mirror public/
+
+# Add admin
+php artisan ds:addadmin
 ```

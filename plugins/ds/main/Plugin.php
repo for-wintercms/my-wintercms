@@ -24,4 +24,14 @@ class Plugin extends PluginBase
             'icon'        => 'icon-leaf'
         ];
     }
+
+    /**
+     * Register method, called when the plugin is first registered.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->registerConsoleCommand('ds:addadmin', 'DS\Main\Console\AddAdmin');
+    }
 }
