@@ -2,7 +2,8 @@
     <img src="https://github.com/wintercms/winter/raw/develop/modules/backend/assets/images/wordmark.png?raw=true" alt="Winter CMS Logo" width="100%" />
 </p>
 
-- Website - [Winter](https://wintercms.com)
+- [Website Winter CMS](https://wintercms.com)
+- [Docs](https://wintercms.com/docs/)
 - GitHub:
     - [Official Stable Build](https://github.com/wintercms/winter/)
     - [Current version](https://github.com/for-wintercms/my-wintercms/)
