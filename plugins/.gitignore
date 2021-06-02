@@ -1,0 +1,12 @@
+/*
+!/.gitignore
+
+# winter/demo
+!/winter
+/winter/*
+!/winter/demo
+
+# ds/main
+!/ds
+/ds/*
+!/ds/main
