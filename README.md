@@ -4,12 +4,16 @@
 
 - Website - [Winter](https://wintercms.com)
 - GitHub:
-    - [Stable Build](https://github.com/wintercms/winter/)
+    - [Official Stable Build](https://github.com/wintercms/winter/)
     - [Current version](https://github.com/for-wintercms/my-wintercms/)
 
 ### Installing Winter
 
 ```shell
+# clone a project
+git clone https://github.com/for-wintercms/my-wintercms.git new-project
+cd new-project
+
 # Generate a configuration file (.env)
 php artisan winter:env
 
