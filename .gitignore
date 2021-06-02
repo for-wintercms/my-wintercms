@@ -37,3 +37,4 @@ _ide_helper.php
 .DS_Store
 package-lock.json
 /node_modules
+/plugins
