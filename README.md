@@ -13,12 +13,16 @@
 # clone a project
 git clone https://github.com/for-wintercms/my-wintercms.git new-project
 cd new-project
+composer install
 
 # Generate a configuration file (.env)
 php artisan winter:env
 
 # Generate the key (and then manually register it in the configuration file)
 php artisan key:generate
+
+# DB migration
+php artisan winter:up
 
 # Generates a mirrored public folder using symbolic links.
 php artisan winter:mirror public/
