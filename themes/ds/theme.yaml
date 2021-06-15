@@ -1,0 +1,9 @@
+name: "DS"
+description: "DS theme"
+author: "For WinterCMS Team"
+homepage: "https://github.com/for-wintercms/my-wintercms"
+code: ''
+form:
+    fields:
+        googleanalytics_id:
+            label: 'Google Analytics ID'
