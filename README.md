@@ -11,7 +11,7 @@
 ### Installing Winter
 
 ```shell
-# clone a project
+# Clone a project
 git clone https://github.com/for-wintercms/my-wintercms.git new-project
 cd new-project
 composer install
@@ -27,4 +27,12 @@ php artisan key:generate
 
 # DB migration
 php artisan winter:up
+```
+
+### Create a new theme
+
+```shell
+cp -r themes/ds themes/new-theme
+php artisan winter:mirror public/
+rm -rf public/themes/ds
 ```

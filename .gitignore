@@ -33,6 +33,10 @@ _ide_helper.php
 !/public/index.php
 !/public/robots.txt
 
+# Themes
+/themes/*
+!/themes/ds
+
 # Other ignores
 .DS_Store
 package-lock.json
