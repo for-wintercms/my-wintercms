@@ -48,6 +48,10 @@ class Plugin extends PluginBase
             'ds.main.access_page_404' => [
                 'label' => 'Manage the 404 page',
                 'tab' => $categoryPages
+            ],
+            'ds.main.access_page_error' => [
+                'label' => 'Manage the error page',
+                'tab' => $categoryPages
             ]
         ];
     }
@@ -64,6 +68,16 @@ class Plugin extends PluginBase
                 'order'       => 500,
                 'keywords'    => 'settings, pages, 404',
                 'permissions' => ['ds.main.access_pages', 'ds.main.access_page_404'],
+            ],
+            'settings_page_error' => [
+                'label'       => 'Error',
+                'description' => 'Error page.',
+                'category'    => SettingsPages::SETTINGS_CATEGORY_PAGES,
+                'icon'        => 'icon-warning',
+                'class'       => 'DS\Main\Models\SettingsPageError',
+                'order'       => 501,
+                'keywords'    => 'settings, pages, error',
+                'permissions' => ['ds.main.access_pages', 'ds.main.access_page_error'],
             ]
         ];
     }

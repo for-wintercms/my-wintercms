@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  title:
+    label: Title
+    type: text
+    span: left
+    default: "Error page (500)"
+  icon:
+    label: Icon
+    type: fileupload
+    mode: image
+    imageHeight: 100
+    imageWidth: 100
+    span: right
+  desc:
+    label: Description
+    type: richeditor
+    size: huge
+    span: full
+    default: "<h1>Clean up on aisle three!</h1><p><small><em>Error code: 500</em></small>"
