@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  title:
+    label: Title
+    type: text
+    span: left
+    default: "Page not found (404)"
+  icon:
+    label: Icon
+    type: fileupload
+    mode: image
+    imageHeight: 100
+    imageWidth: 100
+    span: right
+  desc:
+    label: Description
+    type: richeditor
+    size: huge
+    span: full
+    default: "<h1>You appear to be lost...</h1>\n<p><small><em>Error code: 404</em></small>"

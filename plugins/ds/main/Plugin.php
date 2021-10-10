@@ -3,6 +3,7 @@
 namespace DS\Main;
 
 use Backend;
+use DS\Main\Models\SettingsPages;
 use System\Classes\PluginBase;
 
 /**
@@ -33,5 +34,37 @@ class Plugin extends PluginBase
     public function register()
     {
         // $this->registerConsoleCommand('ds:addadmin', 'DS\Main\Console\AddAdmin');
+    }
+
+    public function registerPermissions()
+    {
+        $categoryPages = 'Pages';
+
+        return [
+            'ds.main.access_pages' => [
+                'label' => 'Manage the all pages',
+                'tab' => $categoryPages
+            ],
+            'ds.main.access_page_404' => [
+                'label' => 'Manage the 404 page',
+                'tab' => $categoryPages
+            ]
+        ];
+    }
+
+    public function registerSettings()
+    {
+        return [
+            'settings_page_404' => [
+                'label'       => '404',
+                'description' => '404 page.',
+                'category'    => SettingsPages::SETTINGS_CATEGORY_PAGES,
+                'icon'        => 'icon-times-rectangle-o',
+                'class'       => 'DS\Main\Models\SettingsPage404',
+                'order'       => 500,
+                'keywords'    => 'settings, pages, 404',
+                'permissions' => ['ds.main.access_pages', 'ds.main.access_page_404'],
+            ]
+        ];
     }
 }
