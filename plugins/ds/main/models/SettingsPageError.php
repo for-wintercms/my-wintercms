@@ -3,7 +3,7 @@
 namespace DS\Main\Models;
 
 /**
- * SettingsPage404 Model
+ * SettingsPageError Model
  */
 class SettingsPageError extends SettingsPages
 {
